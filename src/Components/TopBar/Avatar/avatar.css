@@ -1,0 +1,14 @@
+.userInfo_container{
+    display: flex;
+    margin-right: 11px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 36px;
+}
+
+.userInfo_container .username{
+    padding-left: 6px;
+    font-size: 18px;
+    color: #2f2f2f;
+    font-family: 'McLaren', 'sans-serif';
+}
