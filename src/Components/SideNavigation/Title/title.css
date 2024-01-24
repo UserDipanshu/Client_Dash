@@ -1,0 +1,23 @@
+.sidebar_container .title_container{
+    background-color: #ffffff;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+    transition: transform 0.8s;
+}
+
+.title_container .title_text{
+    font-size: 27px;
+    font-weight: 700;
+    color: #775da6b0;
+}
+
+.sidebar_container .title_container:hover{
+    transform : scale(1.1)
+}
+
+
+

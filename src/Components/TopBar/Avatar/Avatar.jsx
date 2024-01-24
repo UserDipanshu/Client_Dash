@@ -4,7 +4,7 @@ import "./avatar.css"
 function CustomAvatar() {
     return (
         <div className='userInfo_container'>
-        <Avatar />
+        <Avatar>DD</Avatar>
         <span className='username'>Dips Dev</span>
         </div>
     )

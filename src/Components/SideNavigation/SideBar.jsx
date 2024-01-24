@@ -1,9 +1,12 @@
+import Navigation from "./Navigation/Navigation"
+import Title from "./Title/Title"
 import "./sideBar.css"
 
 function SideBar() {
     return (
         <div className="sidebar_container">
-            <h1>Side Bar</h1>
+            <Title />
+        <Navigation />
         </div>
     )
 }
