@@ -19,7 +19,7 @@ const navItems=[
 ];
 
 
-function Navigation() {
+function Navigation( {expanded} ) {
     const [activeTabIndex, setActiveTabIndex]  = useState(0)
 
     function handlePageChange(ind) {
@@ -27,21 +27,37 @@ function Navigation() {
     }
 
     return (
-        <div className="navigation_container">
-            {
-                navItems.map((items, ind)=> 
-                    <div className={`nav_item_cont ${activeTabIndex === ind ? "active" : ""}`} key={ind+items.title} onClick={() => handlePageChange(ind)}>
-                        <div className={`nav_item_img ${activeTabIndex === ind ? "active" : ""}`}>
-                            {items.image}
-                        </div>
-                        <div className={`nav_item_text ${activeTabIndex === ind ? "active" : ""}`}>
-                            {items.title}
-                        </div>
-                    </div>
-                )
-            }
-        </div>
-    )
+			<div className='navigation_container'>
+				{navItems.map((items, ind) => (
+					<div
+						className={`nav_item_cont ${
+							activeTabIndex === ind ? "active" : ""
+						}`}
+						key={ind + items.title}
+						onClick={() => handlePageChange(ind)}
+					>
+						<div
+							className={`nav_item_img ${
+								activeTabIndex === ind ? "active" : ""
+							}`}
+						>
+							{items.image}
+						</div>
+						{ expanded ? 
+							<div
+								className={`nav_item_text ${
+									activeTabIndex === ind ? "active" : ""
+								}`}
+							>
+								{items.title}
+							</div>
+                            :
+                            null
+						}
+					</div>
+				))}
+			</div>
+		);
 }
 
 export default Navigation

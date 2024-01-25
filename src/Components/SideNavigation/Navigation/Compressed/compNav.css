@@ -1,0 +1,36 @@
+.sidebar_container .navigation_container{
+    flex: 1;
+    background-color: white;
+}
+
+.navigation_container{
+    padding-top: 40px;
+}
+
+.nav_item_cont{
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    gap: 29px;
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 11px;
+    margin: 16px auto;
+    transition: transform 0.5s;
+}
+
+.nav_item_cont:hover, .nav_item_cont.active{
+    transform: scale(1.1);
+    border-radius: 12px;
+    background-color: #e5e1ee;
+    cursor: pointer;
+}
+
+.nav_item_img.active{
+    color: #775da6;
+}
+
+.nav_item_text.active{
+    color: #404040;
+}
