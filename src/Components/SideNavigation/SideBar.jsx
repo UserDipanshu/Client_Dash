@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import CompNavigation from "./Navigation/Compressed/CompNavigation";
 import Navigation from "./Navigation/Navigation";
 import Title from "./Title/Title";
 import "./sideBar.css";

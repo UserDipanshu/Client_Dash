@@ -1,7 +1,11 @@
+import "./content.css"
+
 function Content() {
     return(
+        <div className="content_container">
+            <h1> Content</h1>
+        </div>
         
-        <h1 style={{"backgroundColor":"green"}}> Content</h1>
     )
 }
 

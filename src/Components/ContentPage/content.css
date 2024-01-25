@@ -1,0 +1,12 @@
+.content_container{
+    height: calc(100% - 65px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 39px;
+}
+
+
+/* #4602c2 */
